@@ -6,7 +6,7 @@ import { Inline } from '../components/ui';
 import { chapterById, chapterSections, chapters } from '../data';
 import { palette } from '../lib/palette';
 import { printPage, progress, scrollToId, slugify, takePendingScroll, toast, useProgress } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 export default function ChapterPage({ id }: { id: string }) {
   const ch = chapterById(id);
