@@ -4,7 +4,7 @@ import { CodeEditor, LANG_LABEL } from '../components/Code';
 import { practicals } from '../data/practicals';
 import type { Lang } from '../lib/highlight';
 import { buildDoc, copyText, downloadFile, toast, useLocalStorage } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 interface Code { html: string; css: string; js: string; }
 const STARTER: Code = {
