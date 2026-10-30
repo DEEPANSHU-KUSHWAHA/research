@@ -3,7 +3,7 @@ import { Library, ListChecks, Printer, Search } from 'lucide-react';
 import { PageHeader } from '../components/ui';
 import { cssCheat, glossary, htmlCheat, jsCheat, type CheatGroup, type GlossCat } from '../data/reference';
 import { printPage, scrollToId, slugify, takePendingScroll } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 const CAT_COLOR: Record<GlossCat, string> = { Web: '#0ea5e9', HTML: '#f97316', CSS: '#ec4899', JS: '#eab308', Design: '#6366f1' };
 
