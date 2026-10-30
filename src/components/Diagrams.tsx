@@ -1,7 +1,7 @@
 import { Fragment, useState, type ReactNode } from 'react';
 import { ArrowRight, CircleCheck, CodeXml, Globe, Laptop, Palette, PenTool, RefreshCw, Rocket, Server, Target, type LucideIcon } from 'lucide-react';
 import type { DiagramId } from '../data/types';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 export function Diagram({ id, caption }: { id: DiagramId; caption?: string }) {
   const C = { 'client-server': ClientServer, 'element-anatomy': ElementAnatomy, 'html-structure': HtmlStructure, 'css-syntax': CssSyntax, 'box-model': BoxModelDiagram, 'semantic-layout': SemanticLayout, 'web-process': WebProcess }[id];
