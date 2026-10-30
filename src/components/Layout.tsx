@@ -8,7 +8,7 @@ import { glossary } from '../data/reference';
 import { palette } from '../lib/palette';
 import { navigate, printPage, scrollToId, setPendingScroll, slugify, useProgress, useTheme, useToasts } from '../lib/store';
 import { SIMS } from '../simulations/registry';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Icon } from './Icon';
 
 export const NAV: { to: string; label: string; icon: LucideIcon; highlight?: boolean }[] = [
