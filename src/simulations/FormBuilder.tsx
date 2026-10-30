@@ -1,7 +1,7 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import { ArrowDown, ArrowUp, Plus, Send, Trash2 } from 'lucide-react';
 import { CodeBlock } from '../components/Code';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Seg } from './kit';
 
 type FType = 'text' | 'email' | 'password' | 'number' | 'date' | 'color' | 'range' | 'radio' | 'checkbox' | 'select' | 'textarea';
