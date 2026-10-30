@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { ChevronRight, Combine, RotateCcw } from 'lucide-react';
 import { CodeBlock, CodeEditor } from '../components/Code';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Hint, Slider, Stepper, Toggle } from './kit';
 
 /* ================================================================== */
