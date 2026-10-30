@@ -7,7 +7,7 @@ import { useProgress } from '../lib/store';
 import { Icon } from '../components/Icon';
 import { ProgressRing } from '../components/ui';
 import { SIMS } from '../simulations/registry';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 const tryCount = chapters.reduce((n, c) => n + c.blocks.filter((b) => b.type === 'tryit').length, 0);
 
