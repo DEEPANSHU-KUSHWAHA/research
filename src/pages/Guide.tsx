@@ -10,7 +10,7 @@ import type { Chapter } from '../data/types';
 import { palette } from '../lib/palette';
 import { buildDoc, printPage, useLocalStorage, useProgress } from '../lib/store';
 import { SIMS } from '../simulations/registry';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 interface Info { name: string; title: string; }
 interface Opts {
