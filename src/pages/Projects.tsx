@@ -4,7 +4,7 @@ import { CodeBlock } from '../components/Code';
 import { PageHeader } from '../components/ui';
 import { practicals, type Practical } from '../data/practicals';
 import { buildDoc, copyText, downloadFile, openInPlayground, printPage } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 const level = (n: number) =>
   n === 12 ? { label: 'HTML + CSS + JS', cls: 'bg-indigo-500/15 text-indigo-700 dark:text-indigo-300' }
