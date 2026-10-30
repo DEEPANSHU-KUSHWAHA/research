@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Minus, Plus } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 export function Slider({ label, value, min, max, step = 1, unit = 'px', onChange }: {
   label: string; value: number; min: number; max: number; step?: number; unit?: string; onChange: (v: number) => void;
