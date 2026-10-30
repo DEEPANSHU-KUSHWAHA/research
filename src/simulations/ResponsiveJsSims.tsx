@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Laptop, Monitor, Play, RotateCcw, Smartphone, Tablet, Terminal } from 'lucide-react';
 import { CodeBlock } from '../components/Code';
 import { buildDoc } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Hint, Slider } from './kit';
 
 /* ================================================================== */
