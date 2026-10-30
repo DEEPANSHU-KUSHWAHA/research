@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { ArrowLeftRight, Copy } from 'lucide-react';
 import { CodeBlock } from '../components/Code';
 import { copyText } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Seg, Slider, Tabs } from './kit';
 
 /* ---------------- colour maths ---------------- */
