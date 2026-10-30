@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Info, Lightbulb, Sparkles, TriangleAlert } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 /** Renders **bold**, *italic* and `code` inside plain strings. */
 export function Inline({ text }: { text: string }) {
