@@ -5,7 +5,7 @@ import { chapterById, chapters } from '../data';
 import { questions, type Question } from '../data/quiz';
 import { palette } from '../lib/palette';
 import { printPage, progress, useProgress } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 type Phase = 'setup' | 'play' | 'result';
 const shuffle = <T,>(a: T[]) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
