@@ -2,7 +2,7 @@ import { useMemo, useState, type CSSProperties, type KeyboardEvent } from 'react
 import { Copy, ExternalLink, FlaskConical, Play, RotateCcw } from 'lucide-react';
 import { highlight, type Lang } from '../lib/highlight';
 import { buildDoc, copyText, openInPlayground, useDebounced } from '../lib/store';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 export const LANG_LABEL: Record<Lang, string> = { html: 'HTML', css: 'CSS', js: 'JavaScript' };
 
