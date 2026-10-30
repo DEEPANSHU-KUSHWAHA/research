@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react';
 import { Database, Pause, Play, RefreshCw, RotateCcw, Server, StepBack, StepForward, type LucideIcon } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Hint } from './kit';
 
 /* ================================================================== */
