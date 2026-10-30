@@ -6,7 +6,7 @@ import { chapterById } from '../data';
 import { palette } from '../lib/palette';
 import { progress, useProgress } from '../lib/store';
 import { SIMS, simById } from '../simulations/registry';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 
 export default function Lab({ simId }: { simId?: string }) {
   const prog = useProgress();
