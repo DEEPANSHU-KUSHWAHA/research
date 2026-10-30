@@ -10,7 +10,8 @@ import Playground from './pages/Playground';
 import Projects from './pages/Projects';
 import Quiz from './pages/Quiz';
 import { CheatSheet, Glossary } from './pages/Reference';
-import { cn } from './utils/cn';
+
+import { cn } from "./utils/cn";
 
 const TITLES: Record<string, string> = {
   lab: 'Simulation Lab', playground: 'Code Playground', projects: 'Hands-on Projects', quiz: 'Quiz Arena',
