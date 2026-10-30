@@ -3,7 +3,7 @@ import { ChevronRight, CircleCheck, Maximize2, MousePointerClick } from 'lucide-
 import type { Block, SimId } from '../data/types';
 import { progress, slugify } from '../lib/store';
 import { simById } from '../simulations/registry';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { CodeBlock, TryIt, TryItStatic } from './Code';
 import { Diagram } from './Diagrams';
 import { Icon } from './Icon';
