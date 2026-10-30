@@ -1,0 +1,95 @@
+export type GlossCat = 'Web' | 'HTML' | 'CSS' | 'JS' | 'Design';
+export interface Term { term: string; def: string; cat: GlossCat; }
+
+const T = (term: string, cat: GlossCat, def: string): Term => ({ term, cat, def });
+
+export const glossary: Term[] = [
+  T('Accessibility (a11y)', 'Design', 'Designing websites so that everyone, including people with disabilities, can use them.'),
+  T('Alt text', 'HTML', 'Alternative text in the alt attribute of an image; describes it for screen readers and when it fails to load.'),
+  T('Attribute', 'HTML', 'Extra information about an element, written as name="value" inside the opening tag.'),
+  T('Back-end', 'Web', 'The server side of a website — databases, servers and application logic.'),
+  T('Block element', 'CSS', 'An element that starts on a new line and takes the full available width, e.g. div, p, h1.'),
+  T('Box model', 'CSS', 'The model describing every element as content + padding + border + margin.'),
+  T('Breakpoint', 'CSS', 'A screen width at which a responsive layout changes, defined using media queries.'),
+  T('Browser', 'Web', 'Software that requests, interprets and displays web pages, e.g. Chrome, Firefox, Edge.'),
+  T('Cascade', 'CSS', 'The rules (importance, specificity, source order) that decide which CSS declaration wins.'),
+  T('Class', 'CSS', 'A reusable name given to elements (class="x") and selected in CSS with a dot (.x).'),
+  T('Client', 'Web', 'A device or program (usually a browser) that requests resources from a server.'),
+  T('Colspan / Rowspan', 'HTML', 'Table attributes that merge cells across columns / down rows.'),
+  T('Contrast ratio', 'Design', 'The difference in brightness between text and background; WCAG asks for at least 4.5:1.'),
+  T('CSS', 'CSS', 'Cascading Style Sheets — the language that controls the presentation of HTML documents.'),
+  T('DNS', 'Web', 'Domain Name System — translates domain names into IP addresses.'),
+  T('DOCTYPE', 'HTML', 'The declaration <!DOCTYPE html> that tells the browser the document uses HTML5.'),
+  T('DOM', 'JS', 'Document Object Model — a tree of objects representing the page that JavaScript can read and change.'),
+  T('Domain name', 'Web', 'The human-readable address of a website, such as example.com.'),
+  T('Element', 'HTML', 'A complete HTML unit: opening tag, content and closing tag.'),
+  T('Empty tag', 'HTML', 'A tag with no content and no closing tag, such as <br>, <hr>, <img>.'),
+  T('Entity', 'HTML', 'A code like &lt; or &copy; used to display reserved or special characters.'),
+  T('Event', 'JS', 'An action such as click, keyup or submit that JavaScript can respond to.'),
+  T('Flexbox', 'CSS', 'A CSS layout module for arranging items in one dimension (a row or a column).'),
+  T('Front-end', 'Web', 'The part of a website users see and interact with, built with HTML, CSS and JavaScript.'),
+  T('Function', 'JS', 'A named, reusable block of code that performs a task and may return a value.'),
+  T('Grid', 'CSS', 'A CSS layout module for arranging items in two dimensions (rows and columns).'),
+  T('HEX colour', 'CSS', 'A colour written as #RRGGBB using hexadecimal values for red, green and blue.'),
+  T('Hosting', 'Web', 'A service that stores website files on a server connected to the Internet 24×7.'),
+  T('HTML', 'HTML', 'HyperText Markup Language — the standard language for structuring web pages.'),
+  T('HTTP / HTTPS', 'Web', 'HyperText Transfer Protocol (Secure) — rules for transferring web resources; HTTPS is encrypted.'),
+  T('Hyperlink', 'HTML', 'A clickable link created with <a href="…"> that navigates to another resource.'),
+  T('ID', 'CSS', 'A unique identifier for one element (id="x"), selected in CSS with a hash (#x).'),
+  T('Inheritance', 'CSS', 'Passing of certain CSS properties (such as color and font) from parent to child elements.'),
+  T('Inline element', 'CSS', 'An element that flows within a line and only takes the width it needs, e.g. span, a.'),
+  T('Internet', 'Web', 'A global network of interconnected computer networks.'),
+  T('IP address', 'Web', 'A unique numeric address that identifies a device on a network.'),
+  T('JavaScript', 'JS', 'A programming language that adds behaviour and interactivity to web pages.'),
+  T('Margin', 'CSS', 'Transparent space outside an element\'s border.'),
+  T('Media query', 'CSS', 'A CSS rule (@media) that applies styles only when conditions such as screen width are met.'),
+  T('Meta tag', 'HTML', 'A tag in <head> providing information about the page, e.g. charset or viewport.'),
+  T('Mockup', 'Design', 'A high-fidelity, full-colour static design of a page.'),
+  T('Padding', 'CSS', 'Space between an element\'s content and its border.'),
+  T('Prototype', 'Design', 'An interactive, clickable model of a website used for testing before development.'),
+  T('Pseudo-class', 'CSS', 'A keyword added to a selector to target a state or position, e.g. :hover, :first-child.'),
+  T('Responsive design', 'Design', 'An approach in which one website adapts its layout to all screen sizes.'),
+  T('RGB', 'CSS', 'Colour model mixing red, green and blue light; written rgb(0–255, 0–255, 0–255).'),
+  T('Selector', 'CSS', 'The part of a CSS rule that chooses which elements to style.'),
+  T('Semantic HTML', 'HTML', 'Using tags that describe meaning (header, nav, article) rather than only appearance.'),
+  T('Server', 'Web', 'A computer that stores resources and sends them to clients on request.'),
+  T('Specificity', 'CSS', 'A score that decides which selector wins: inline > ID > class > element.'),
+  T('Static website', 'Web', 'A website whose pages show the same fixed content to every visitor.'),
+  T('Tag', 'HTML', 'A keyword in angle brackets, such as <p>, that marks up content.'),
+  T('Typography', 'Design', 'The art of arranging type: font choice, size, spacing and line length.'),
+  T('UI', 'Design', 'User Interface — the visual elements users interact with.'),
+  T('URL', 'Web', 'Uniform Resource Locator — the full address of a resource on the web.'),
+  T('UX', 'Design', 'User Experience — how easy and satisfying it is to use a product.'),
+  T('Variable', 'JS', 'A named container that stores a value; declared with let, const or var.'),
+  T('Viewport', 'CSS', 'The visible area of a web page in the browser window.'),
+  T('Web page', 'Web', 'A single document on the World Wide Web, usually written in HTML.'),
+  T('Website', 'Web', 'A collection of related web pages under one domain name.'),
+  T('Wireframe', 'Design', 'A simple low-fidelity sketch showing the layout and structure of a page.'),
+  T('World Wide Web (WWW)', 'Web', 'A system of interlinked documents and resources accessed over the Internet.'),
+];
+
+export interface CheatGroup { title: string; rows: [string, string][]; }
+
+export const htmlCheat: CheatGroup[] = [
+  { title: 'Document structure', rows: [['<!DOCTYPE html>', 'HTML5 declaration'], ['<html> <head> <body>', 'Root, information, visible content'], ['<title>', 'Browser tab title'], ['<meta charset="UTF-8">', 'Character encoding'], ['<link rel="stylesheet">', 'Link external CSS'], ['<script src>', 'Add JavaScript']] },
+  { title: 'Text', rows: [['<h1> … <h6>', 'Headings'], ['<p> <br> <hr>', 'Paragraph, line break, rule'], ['<b> <strong>', 'Bold / important'], ['<i> <em>', 'Italic / emphasis'], ['<u> <mark> <small>', 'Underline, highlight, small'], ['<sub> <sup>', 'Subscript, superscript'], ['<pre> <code>', 'Preformatted, code'], ['<blockquote> <q>', 'Quotations']] },
+  { title: 'Lists', rows: [['<ol type start>', 'Ordered list'], ['<ul>', 'Unordered list'], ['<li>', 'List item'], ['<dl> <dt> <dd>', 'Description list']] },
+  { title: 'Links & media', rows: [['<a href target>', 'Hyperlink'], ['<img src alt width>', 'Image'], ['<audio controls>', 'Sound'], ['<video controls poster>', 'Video'], ['<iframe src>', 'Embedded page'], ['<figure> <figcaption>', 'Figure with caption']] },
+  { title: 'Tables', rows: [['<table border>', 'Table'], ['<caption>', 'Table title'], ['<tr> <th> <td>', 'Row, header cell, data cell'], ['colspan / rowspan', 'Merge cells'], ['<thead> <tbody> <tfoot>', 'Row groups']] },
+  { title: 'Forms', rows: [['<form action method>', 'Form container'], ['<input type>', 'text, password, email, radio, checkbox…'], ['<label for>', 'Caption for a control'], ['<select> <option>', 'Drop-down list'], ['<textarea>', 'Multi-line text'], ['<button>', 'Button'], ['<fieldset> <legend>', 'Group with title']] },
+  { title: 'Semantic layout', rows: [['<header> <footer>', 'Top / bottom sections'], ['<nav>', 'Navigation'], ['<main>', 'Main content'], ['<section> <article>', 'Section / self-contained content'], ['<aside>', 'Side content']] },
+];
+
+export const cssCheat: CheatGroup[] = [
+  { title: 'Selectors', rows: [['*', 'All elements'], ['p', 'Element'], ['.class', 'Class'], ['#id', 'ID'], ['div p', 'Descendant'], ['ul > li', 'Child'], ['h1, h2', 'Group'], ['a:hover', 'Pseudo-class']] },
+  { title: 'Text & fonts', rows: [['color', 'Text colour'], ['font-family', 'Typeface'], ['font-size', 'Size'], ['font-weight', 'Boldness'], ['text-align', 'Alignment'], ['text-decoration', 'Underline etc.'], ['text-transform', 'Case'], ['line-height', 'Line spacing']] },
+  { title: 'Colours & backgrounds', rows: [['background-color', 'Fill colour'], ['background-image', 'url() / gradient'], ['background-size', 'cover / contain'], ['opacity', '0 to 1'], ['box-shadow', 'Element shadow'], ['border-radius', 'Rounded corners']] },
+  { title: 'Box model', rows: [['width / height', 'Content size'], ['padding', 'Inner space'], ['border', 'width style colour'], ['margin', 'Outer space'], ['box-sizing', 'content-box / border-box']] },
+  { title: 'Layout', rows: [['display', 'block, inline, flex, grid, none'], ['position', 'static, relative, absolute, fixed, sticky'], ['justify-content', 'Main-axis alignment'], ['align-items', 'Cross-axis alignment'], ['flex-direction / flex-wrap', 'Row/column, wrapping'], ['grid-template-columns', 'Grid columns'], ['gap', 'Space between items'], ['@media (min-width: …)', 'Responsive rules']] },
+];
+
+export const jsCheat: CheatGroup[] = [
+  { title: 'Basics', rows: [['let / const / var', 'Declare variables'], ['// and /* */', 'Comments'], ['alert() / console.log()', 'Output'], ['prompt()', 'Ask for input'], ['typeof x', 'Data type of x']] },
+  { title: 'Logic', rows: [['if (…) { } else { }', 'Decision'], ['for (let i=0; i<n; i++)', 'Counting loop'], ['while (…) { }', 'Conditional loop'], ['function f(a) { return a; }', 'Function'], ['=== !== && || !', 'Comparison & logic']] },
+  { title: 'DOM & events', rows: [['getElementById("id")', 'Find by id'], ['querySelector(".c")', 'Find by selector'], ['el.innerHTML / textContent', 'Change content'], ['el.style.color', 'Change style'], ['el.classList.toggle("x")', 'Toggle class'], ['el.addEventListener("click", fn)', 'Listen for event']] },
+];
