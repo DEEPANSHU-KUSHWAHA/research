@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { CodeBlock } from '../components/Code';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Hint, Seg, Slider, Toggle } from './kit';
 
 /* ================================================================== */
