@@ -1,23 +1,18 @@
-
 import path from "path";
 import { fileURLToPath } from "url";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import { viteSingleFile } from "vite-plugin-singlefile";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig({
-  // Required for GitHub Pages repository deployment
-  base: "/research/",
+export default defineConfig(({ mode }) => ({
+  // Use a relative base for GitHub Pages so generated assets resolve correctly
+  // from repo subpaths and do not trigger MIME issues from absolute URLs.
+  base: mode === "production" ? "./" : "/",
 
-  plugins: [
-    react(),
-    tailwindcss(),
-    viteSingleFile(),
-  ],
+  plugins: [react(), tailwindcss()],
 
   resolve: {
     alias: {
@@ -27,6 +22,10 @@ export default defineConfig({
 
   build: {
     outDir: "dist",
-    assetsInlineLimit: 100000000,
+    emptyOutDir: true,
+    assetsInlineLimit: 0,
+    modulePreload: {
+      polyfill: false,
+    },
   },
-});
+}));
