@@ -1,6 +1,6 @@
 import { useState, type CSSProperties } from 'react';
 import { Sparkles, Wand2, RotateCcw } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { cn } from "/utils/cn";
 import { Toggle } from './kit';
 
 const PRINCIPLES = [
